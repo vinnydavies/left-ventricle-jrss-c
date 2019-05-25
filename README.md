@@ -1,3 +1,7 @@
-Upon final acceptance of our manuscript, we'll make the code available for the study:
+Code for the paper:
+
+Davies et al.
 "Fast Parameter Inference in a Biomechanical Model of the Left Ventricle using Statistical Emulation"
-which is currently under review for JRSS - Series C.
+Under review, Journal of the Royal Statistical Society - Series C.
+
+Preprint: https://arxiv.org/abs/1905.06310

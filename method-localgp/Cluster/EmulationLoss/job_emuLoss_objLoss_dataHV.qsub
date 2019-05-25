@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N emuLoss_objLoss_dataHV
+#PBS -q defaultq
+#PBS -l nodes=1:ppn=1
+#PBS -j oe
+#PBS -l walltime=100:00:00
+#PBS -t 1
+
+/maths/MATLAB/R2017a/bin/matlab -nodisplay -nosplash -r "\
+cd('~/Documents/MATLAB/LeftVentricleProject'); \
+startup; \
+lv.run_emulation_loss( 'loss', 'hv', get_pbs_array_id() ); \
+exit()"
