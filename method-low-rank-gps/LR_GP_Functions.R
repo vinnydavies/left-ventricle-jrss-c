@@ -5,7 +5,7 @@ predict_loss<-function(gam_model,theta){
   predict(gam_model,x)
 }
 
-emulate_loss<-function(new_data,Data_Matrix,param_Matrix,start_points,loss_method,knots=20,max_it=100){
+emulate_loss<-function(new_data,Data_Matrix,param_Matrix,start_points,loss_method,knots=2000,max_it=1000){
   # create vector of differences
   y<-t(t(Data_Matrix)-new_data)
   inv_Cov_y<-solve(cov(Data_Matrix))
@@ -29,7 +29,7 @@ emulate_loss<-function(new_data,Data_Matrix,param_Matrix,start_points,loss_metho
   
   for(i in 1:nrow(start_points)){
     sp<-start_points[i,]
-    EL_List[[i+1]]<-optim(sp,predict_loss,gam_model=model,control = list(maxit=max_it),method="CG")
+    EL_List[[i]]<-optim(sp,predict_loss,gam_model=model,control = list(maxit=max_it),method="CG")
   }
   EL_List      
 }
@@ -70,4 +70,18 @@ LearnParam25.v<-function(param0,y,list_m,maxit=500,method="CG",error_method,Cov_
   else{
     print("ERROR: Incorrect error_method selected")
   }
+}
+
+get_param_loss <- function(loss_list){
+  selected <- NA
+  value <- Inf
+  for(i in 1:length(loss_list)){
+    if(loss_list[[i]]$convergence == 0){
+      if(loss_list[[i]]$value < value & all(loss_list[[i]]$par^2 > 0.1) & all(loss_list[[i]]$par^2 < 5)){
+        value <- loss_list[[i]]$value
+        selected <- i
+      }
+    }
+  }
+  return(loss_list[[selected]]$par^2)
 }
