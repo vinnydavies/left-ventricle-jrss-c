@@ -12,7 +12,9 @@ The code for these methods can be found in the folders called **method-localgp**
 how to use the code.
 
 The simulated data is available at `\method-localgp\Simulations\Design4D`, while the data for the healthy
-volunteer is available at `\method-localgp\Data\Stacked\DataHV.mat`.
+volunteer is available at `\method-localgp\Data\Stacked\DataHV.mat`. The first column of the files
+`YTrain4D*`, `YTest4D*`, and `DataHV.mat` contains the LV chamber volume measurement, 
+while the remaining columns represent the 24 strain measurements.
 
 ## Further Details
 
