@@ -11,5 +11,3 @@ The simulated data is available at \method-localgp\Simulations\Design4D and data
 # Further Details
 
 Preprint: https://arxiv.org/abs/1905.06310
-
-Contact details: Paper (Dirk.Husmeier@Glasgow.ac.uk), Low-Rank GP Method (Vinny.Davies@Glasgow.ac.uk), and Local GP Method ()
