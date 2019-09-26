@@ -1,8 +1,8 @@
-# Fast Parameter Inference in a Biomechanical Model of the Left Ventricle using Statistical Emulation
+# Fast parameter inference in a biomechanical modelof the left ventricle by using statistical emulation
 
 Davies, V., Noè, U., Lazarus, A., Gao, H., Macdonald, B., Berry, C., Luo, X. and Husmeier, D. (2019). 
 Fast Parameter Inference in a Biomechanical Model of the Left Ventricle using Statistical Emulation. 
-*Accepted for publication, Journal of the Royal Statistical Society - Series C*.
+*Journal of the Royal Statistical Society - Series C*.
 
 ## Instructions for use
 
@@ -18,4 +18,5 @@ while the remaining columns represent the 24 strain measurements.
 
 ## Further Details
 
+Paper: https://rss.onlinelibrary.wiley.com/doi/epdf/10.1111/rssc.12374
 Preprint: https://arxiv.org/abs/1905.06310
