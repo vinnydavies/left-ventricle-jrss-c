@@ -2,7 +2,7 @@
 
 Davies, V., Noè, U., Lazarus, A., Gao, H., Macdonald, B., Berry, C., Luo, X. and Husmeier, D. (2019). 
 Fast Parameter Inference in a Biomechanical Model of the Left Ventricle using Statistical Emulation. 
-*Journal of the Royal Statistical Society - Series C*.
+*Journal of the Royal Statistical Society - Series C (Applied Statistics)*.
 
 ## Instructions for use
 
